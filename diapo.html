@@ -1,0 +1,62 @@
+
+
+
+
+<html>
+<script language="javascript" src="https://ajax.googleapis.com/ajax/libs/ext-core/3.1.0/ext-core.js"></script>
+<script language="javascript" src="Ext.ux.SimpleDiapo.js"></script>
+<script language="javascript">
+    
+    
+    function init() {
+    
+    
+        // list your images
+        var diapo_images = [
+            'samples/imgres1.jpg'
+            ,'samples/imgres2.jpg'
+            ,'samples/imgres3.jpg'
+            ,'samples/imgres4.jpg'
+            ,'samples/imgres5.jpg'
+            ,'samples/imgres6.jpg'
+            ,'samples/imgres7.jpg'
+            ,'samples/imgres8.jpg'
+            ,'samples/imgres9.jpg'
+            ,'samples/imgres10.jpg'
+        ]
+        
+        // example will full options
+        var e = new Ext.ux.SimpleDiapo({
+            target:'diapo1'
+            ,duration:2000
+            ,images:diapo_images
+            ,shuffle:true
+        });
+        
+        // simplest example
+        var f = new Ext.ux.SimpleDiapo({
+            target:'diapo2'
+            ,images:diapo_images
+        });
+    }
+
+</script>
+<style>
+#diapo1 {
+    border:1px solid silver;
+}
+</style>
+<body onload="init()">
+    <h2>Ext.ux.SimpleDiapo.js</h2>
+    <b>github page : <a href='http://github.com/revolunet/Ext.ux.SimpleDiapo'>http://github.com/revolunet/Ext.ux.SimpleDiapo</a></b>
+    
+    <h3>Diapo 1</h3>
+    <img src='samples/imgres1.jpg' id='diapo1'/>
+    
+    <hr>
+    <h3>Diapo 2</h3>
+    <img src='samples/imgres3.jpg' id='diapo2'/>
+
+    
+</body>
+</html>

@@ -4,6 +4,8 @@ Ext.ux.SimpleDiapo
 A simple javascript diaporama made with [Ext.Core][1].
 -
 
+The classic cross-browser fadein/fadeout diaporama.
+
 
 **Usage**: 
 
